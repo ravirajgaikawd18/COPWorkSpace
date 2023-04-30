@@ -17,7 +17,7 @@ public class Search {
 		System.out.println("Enter array Size");
 		size=sc.nextInt();
 		arr=new int[size];
-		System.out.println("1.Read Arary 2.Print Array 3.Sum of Elements 4.Array Reverser 5.Check even Numbers 6.Search Element in Array ");
+		System.out.println("1.Read Arary 2.Print Array 3.Search Element in Array ");
 		
 		do 
 		{
@@ -26,11 +26,6 @@ public class Search {
 		
 		switch(choice) 
 		{
-		
-		
-		
-		
-		
 		
 		//to read array
 		 
@@ -49,41 +44,9 @@ public class Search {
 		}
 		System.out.println();
 		break;
-		//sum of elements
-		case 3:System.out.println("Sum of Elements");
-		for(int i=0;i<size;i++)
-		{
-			sum=sum+arr[i];
-		}
-			System.out.println(" Sum of Elements="+sum);
-			System.out.println();
-			break;
 		
-			//reverse array elements
-		case 4:System.out.println("Reversed array");
-			for(int i=size-1;i>=0;i--)
-			{
-				System.out.println(arr[i]+" ");
-			}
-		
-			System.out.println();
-			break;
-		
-		//to check even number
-		case 5:System.out.println("Even Numbers in array");
-		for(int i=0;i<size;i++)
-		{
-			if(arr[i]%2==0) 
-			{
-				System.out.println(arr[i]+" ");
-			}
-		}
-		
-		System.out.println();
-		break;
-		
-		//to search element 
-		case 6:System.out.println("Enter Number you want to search");
+		//to search elements in array
+		case 3:System.out.println("Enter Number you want to search");
 		n=sc.nextInt();
 		
 		for(int i=0;i<size;i++)
@@ -110,7 +73,7 @@ public class Search {
 		}
 		
 			
-		}while(choice!=6);
+		}while(choice!=3);
 	
 		
 	}
